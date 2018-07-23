@@ -26,25 +26,27 @@
 
   .login_inner_container {
     position: absolute;
-    background-color: black;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25em;
   }
 
   /* 가로 중앙 정렬 */
   .hc { 
-    width:200px; 
-    left:0; 
-    right:0; 
-    margin-left:auto; 
-    margin-right:auto; 
+    width: 300px; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
   }  
   
   /* 세로 중앙 정렬 */
   .vc { 
-    height:40px; 
+    height: 150px; 
     top: 0; 
-    bottom:0; 
-    margin-top:auto; 
-    margin-bottom:auto; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom: auto; 
   } 
 
 </style>
