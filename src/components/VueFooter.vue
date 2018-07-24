@@ -1,5 +1,7 @@
 <template>
-  <div>푸터</div>
+  <div class="footer-container">
+    <h1>푸터</h1>
+  </div>
 </template>
 <script>
   export default {
@@ -7,5 +9,9 @@
   }
 </script>
 <style scoped>
-
+  .footer-container{
+    width: 100%;
+    height: 150px;
+    border: 1px solid red;
+  }
 </style>

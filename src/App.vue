@@ -1,17 +1,12 @@
 <template>
-  <div id="app">
-    <vue-header/>
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <side-menu/>
-        </div>
-        <div class="col-10">
-          <router-view/>
-        </div>      
+  <div class="app-container">
+    <div id="app" class="hc vc">
+      <vue-header/>
+      <div class="container">
+        <router-view/>
       </div>
+      <vue-footer/>
     </div>
-    <vue-footer/>
   </div>
 </template>
 
@@ -31,7 +26,37 @@ export default {
 </script>
 
 <style>
-#app {
+  #app {
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: .5em;
+    box-shadow: 0px 0px 13px 5px #addbea;
+  }
 
-}
+  .app-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #BDEEFF;
+  }
+
+  /* 가로 중앙 정렬 */
+  .hc { 
+    width: 80%; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }  
+  
+  /* 세로 중앙 정렬 */
+  .vc { 
+    height: 80%; 
+    top: 0; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+  } 
 </style>

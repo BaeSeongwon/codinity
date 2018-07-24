@@ -1,5 +1,7 @@
 <template>
-  <div>메인</div>
+  <div class="main-container">
+    <h2>메인</h2>
+  </div>
 </template>
 <script>
   export default {
@@ -7,5 +9,9 @@
   }
 </script>
 <style scoped>
-
+  .main-container{
+    width: 100%;
+    height: 150px;
+    border: 1px solid red;
+  }
 </style>

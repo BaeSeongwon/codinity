@@ -1,17 +1,43 @@
 <template>
   <div class='header-container'>
-    <h1>헤더</h1>
+    <section class="container">
+      <div class="row">
+        <article class="col-3">
+          <h4>Codinity</h4>
+        </article>
+        <article class="col-6">
+          <vue-main-menu/>
+        </article>
+        <article class="col-3">
+          <div>
+            개발 미정
+          </div>
+        </article>
+      </div>
+    </section>
   </div>
 </template>
 <script>
+  import VueMainMenu from '@/components/VueMainMenu'
+
   export default {
-    name: 'VueHeader'
+    name: 'VueHeader',
+    components: {
+      vueMainMenu: VueMainMenu
+    }
   }
 </script>
 <style scoped>
-  .header-container{
+  h4 {
+    cursor: pointer;
+  }
+
+  .header-container {
     width: 100%;
-    height: 150px;
-    border: 1px solid red;
+    margin: 5px 0px;
+  }
+
+  article:nth-child(2) {
+    text-align: center;
   }
 </style>

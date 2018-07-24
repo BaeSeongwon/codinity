@@ -3,8 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import * as firebase from 'firebase'
 
 Vue.config.productionTip = false
+
+let firebase_config = {
+  apiKey: "<API_KEY>",
+  authDomain: "https://codinity.firebaseio.com/",
+  databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+  storageBucket: "<BUCKET>.appspot.com",
+}
 
 /* eslint-disable no-new */
 new Vue({
