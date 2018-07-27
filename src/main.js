@@ -7,15 +7,6 @@ import * as firebase from 'firebase'
 
 Vue.config.productionTip = false
 
-let config = {
-  apiKey: "AIzaSyD5bxChfqkY1R1VM-fTMJ6lYPXSI3U3YqY",
-  authDomain: "codinity.firebaseapp.com",
-  databaseURL: "https://codinity.firebaseio.com",
-  projectId: "codinity",
-  storageBucket: "codinity.appspot.com",
-  messagingSenderId: "523509439629"
-};
-
 firebase.initializeApp(config);
 
 /* eslint-disable no-new */
