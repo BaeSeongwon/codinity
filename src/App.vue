@@ -7,20 +7,28 @@
       </div>
       <vue-footer/>
     </div>
+	<popup 
+		container-width='400px'
+		container-height='430px'
+		popupTitle='Login'>
+		<login/>
+	</popup>
   </div>
 </template>
 
 <script>
-import VueHeader from '@/components/VueHeader'
-import VueFooter from '@/components/VueFooter'
-import SideMenu from '@/components/SideMenu'
+import VueHeader from '@/components/VueHeader/VueHeader'
+import VueFooter from '@/components/VueFooter/VueFooter'
+import Popup from '@/components/Popup/Popup'
+import Login from '@/components/Login/Login'
 
 export default {
   name: 'App',
   components: {
     vueHeader: VueHeader,
     vueFooter: VueFooter,
-    sideMenu: SideMenu
+	popup: Popup,
+	login: Login
   }
 }
 </script>
